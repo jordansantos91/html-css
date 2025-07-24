@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botão Responsivo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn {
+  border-radius: 40px;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem;
+  outline: 0;
+  padding: 2rem 3rem; /* topo/baixo = 2rem | lados = 3rem */
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #2584ff;
+  color: white;
+  transition: padding 0.3s;
+}
+
+/* Responsivo: lateral ajusta com vw */
+@media screen and (min-width: 600px) {
+  .btn {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <button class="btn">Clique Aqui</button>
+</body>
+</html>
